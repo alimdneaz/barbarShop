@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neaz.com</title>
+    <title>Hair Studio</title>
     <link rel="stylesheet" href="style.css">
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -33,7 +33,7 @@
         </nav>
      </div>
      <div id="menuBtn">
-         <p class="click">X</p>
+         <img id="menu" src="./images/menu.png" alt="">
      </div>
 
 
@@ -198,11 +198,20 @@
 
 
      <script>
-         $(document).ready(function(){
-             $('.click').click(function(){
-                 $('#sideNav').toggle();
-             })
-         })
-     </script>
+        let sideNav = document.getElementById("sideNav");
+        let button= document.getElementById("menuBtn");
+        let menu = document.getElementById("menu");
+    
+        button.addEventListener("click",function(){
+            if(sideNav.style.right == "-260px"){
+                sideNav.style.right="0";
+                menu.src="./images/close.png";
+            } else{
+                sideNav.style.right = "-260px";
+                menu.src="./images/menu.png";
+            }
+            
+        });
+    </script>
 </body>
 </html>

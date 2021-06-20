@@ -65,67 +65,47 @@
 #sideNav{
     position: fixed;
     top: 0;
-    right: 0;
-    width: 60%;
-    height: fit-content;
-    background: rgba(0,0,0,.4);
-    z-index: 10;
-    border-radius: 0 0 10px 10px;
-    visibility: hidden;
-    /* display: none; */
+    right: -260px;
+    width: 260px;
+    height: 100vh;
+    background: #009688;
+    transition:  all .5s ease-in-out;
+    opacity: .7;
+
 }
-nav{
-    margin-top: 20px;
-    /* display: none; */
+ nav ul{
+    list-style: none;
+    padding: 1rem;
+    margin-top: 5rem;
 }
 nav ul li{
-    list-style: none;
-    float: left;
-
+    margin-top: 3rem;
 }
-nav ul li a {
-    color: #fff;
+nav ul li a{
     text-decoration: none;
-    font-size: 20px;
-    padding: 15px  20px;
-    width: 130px;
+    color: #fff;
+    font-size: 25px;
+    width: 200px;
     display: inline-block;
-    transition: .5s;
-    text-align: center;
-    color: #009688;
+    padding: 10px 20px;
+    transition: all .3s ease-in-out;
 }
 nav ul li a:hover{
-    background: #fff;
-    color: #000;
+    background: white;
+    color: #009688;
 }
 
-#menuBtn p{
-    color: blue;
-    font-size: 25px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 10px;
-}
 #menuBtn{
-    background: #fff;
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    z-index: 11;
-    margin-bottom: 20px;
     position: fixed;
-    top: 15px;
-    right: 40px;
-    width: 50px;
-    height: 50px;
-    display: inline-block;
+    top: 5%;
+    right: 4%;
+    width: 40px;
+    height: 40px;
 }
-#menuBtn:hover #sideNav{
-    visibility: visible;
+#menuBtn img{
+    width: 40px;
+    height: 40px;
 }
-/* #menuBtn:hover #sideNav{
-    display: block;
-} */
  /* Features */
 #features{
     width: 100%;
