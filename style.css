@@ -71,6 +71,7 @@
     background: #009688;
     transition:  all .5s ease-in-out;
     opacity: .7;
+    z-index: 100;
 
 }
  nav ul{
@@ -101,6 +102,7 @@ nav ul li a:hover{
     right: 4%;
     width: 40px;
     height: 40px;
+    z-index: 200;
 }
 #menuBtn img{
     width: 40px;
